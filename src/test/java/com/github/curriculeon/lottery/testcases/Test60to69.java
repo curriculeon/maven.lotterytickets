@@ -4,13 +4,20 @@ import com.github.curriculeon.lottery.LotteryTicketTestInterface;
 import org.junit.jupiter.api.Test;
 
 public interface Test60to69 extends LotteryTicketTestInterface {
+    // given
     @Test
     default void test60to69() {
         // seven 4s expected in the 60s
         test(60, 1);
+        test(61, 2);
         test(62, 3);
-        test(63, 4); // anomaly start point
-        test(69, 4); // anomaly stop point
+        test(63, 4); // anomaly
+        test(64, 4); // anomaly
+        test(65, 4); // anomaly
+        test(66, 4); // anomaly
+        test(67, 4); // anomaly
+        test(68, 4); // anomaly
+        test(69, 4); // anomaly
     }
 
     @Test

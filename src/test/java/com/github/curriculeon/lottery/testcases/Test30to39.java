@@ -4,6 +4,7 @@ import com.github.curriculeon.lottery.LotteryTicketTestInterface;
 import org.junit.jupiter.api.Test;
 
 public interface Test30to39 extends LotteryTicketTestInterface {
+    // given
     @Test
     default void test30to39() {
         // four 7s expected in the 30s
